@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/0560d0caf7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="topnav">
+        <div class="top_right_bar" id="hidde_mobile">
+            <div class="top_bar_open_close">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="youtub__icon" onclick="hidesidbar()">
+                <i class="fab fa-youtube-square"></i>
+                <h1>YouTube</h1>
+            </div>
+
+        </div>
+        <ul class="ultop">
+
+            <div class="searchtop" id="searchtop">
+                <i class="fas fa-arrow-left closearrow" onclick="hide_forms_from()" id="closearrow"></i>
+                <form action="" class="topform topform_idden" id="topform">
+                    <input type="text" placeholder="Search" />
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+                <i class="fas fa-search searchhide" id="searchhide" onclick="hidesaerchbar()"></i>
+
+                <i class="fas fa-microphone mictopbar"></i>
+            </div>
+
+        </ul>
+        <div class="left_bar_logo" id="hidde_mobile">
+            <i class="fas fa-video-slash notify_video_icon"></i>
+
+            <i class="fas fa-bell"></i>
+        </div>
+    </nav>
+    <!-- the end of navbar -->
+
+    <div class="container">
+        <div class="left_sidebar">
+            <ul class="sidebarul">
+                <li class="active"><a href=""><i class="fas fa-wallet"></i>
+                        <p class="sidebar__namep">Home</p>
+                    </a></li>
+                <li><a href=""><i class="fas fa-home-lg"></i>
+                        <p class="sidebar__namep">Short</p>
+                    </a></li>
+                <li><a href=""><i class="fas fa-play-circle"></i>
+                        <p class="sidebar__namep">Subscription</p>
+                    </a></li>
+                <li><a href=""><i class="fa-regular fa-eject"></i>
+                        <p class="sidebar__namep">Library</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>
+                        <p class="sidebar__namep">History</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-video"></i>
+                        <p class="sidebar__namep">Your videos</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>
+                        <p class="sidebar__namep">Watch Later</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="maincontent">
+
+            <div class="video__holder">
+                <!-- videos -->
+                <div class="myvideo">
+                    <a href="details.html">
+                        <video src="./video/Build a Shopping Cart With React JS & Stripe.mp4"></video>
+
+                        <div class="video__name_logo">
+
+                            <img src="./img//1667496355.jpg" alt="">
+                            <h1>Chika Channel</h1>
+                        </div>
+                        <div class="video__description">
+                            Marketing manager? Learn how Google Ads can help you find more customers
+                        </div>
+                        <div class="views_hours">
+                            <h1>21k Views</h1>
+                            <h1>1 Hour Ago</h1>
+                        </div>
+                    </a>
+                </div>
+                <!-- second video -->
+                <div class="myvideo">
+                    <a href="">
+                        <video src="./video/Build a Shopping Cart With React JS & Stripe.mp4"></video>
+
+                        <div class="video__name_logo">
+                            <img src="./img//1667496355.jpg" alt="">
+                            <h1>Chika Channel</h1>
+                        </div>
+                        <div class="video__description">
+                            Marketing manager? Learn how Google Ads can help you find more customers
+                        </div>
+                        <div class="views_hours">
+                            <h1>21k Views</h1>
+                            <h1>1 Hour Ago</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- the end -->
+
+                <!-- theired -->
+                <div class="myvideo">
+                    <a href="">
+                        <video src="./video/Build a Shopping Cart With React JS & Stripe.mp4"></video>
+
+                        <div class="video__name_logo">
+                            <img src="./img//1667496355.jpg" alt="">
+                            <h1>Chika Channel</h1>
+                        </div>
+                        <div class="video__description">
+                            Marketing manager? Learn how Google Ads can help you find more customers
+                        </div>
+                        <div class="views_hours">
+                            <h1>21k Views</h1>
+                            <h1>1 Hour Ago</h1>
+                        </div>
+                    </a>
+                </div>
+                <!-- the end -->
+                <!-- another -->
+                <div class="myvideo">
+                    <a href="">
+                        <video src="./video/How To Accept Payments With Stripe.mp4"></video>
+
+                        <div class="video__name_logo">
+                            <img src="./img/1667496355.jpg" alt="">
+                            <h1>Chika Channel</h1>
+                        </div>
+                        <div class="video__description">
+                            Marketing manager? Learn how Google Ads can help you find more customers
+                        </div>
+                        <div class="views_hours">
+                            <h1>21k Views</h1>
+                            <h1>1 Hour Ago</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- the end -->
+
+                <!-- another -->
+                <div class="myvideo">
+                    <a href="">
+                        <video src="./video/How To Accept Payments With Stripe.mp4"></video>
+
+                        <div class="video__name_logo">
+                            <img src="./img/1667496355.jpg" alt="">
+                            <h1>Chika Channel</h1>
+                        </div>
+                        <div class="video__description">
+                            Marketing manager? Learn how Google Ads can help you find more customers
+                        </div>
+                        <div class="views_hours">
+                            <h1>21k Views</h1>
+                            <h1>1 Hour Ago</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- the end -->
+
+                <!-- another -->
+                <div class="myvideo">
+                    <a href="">
+                        <video src="./video/How To Accept Payments With Stripe.mp4"></video>
+
+                        <div class="video__name_logo">
+                            <img src="./img/1667496355.jpg" alt="">
+                            <h1>Chika Channel</h1>
+                        </div>
+                        <div class="video__description">
+                            Marketing manager? Learn how Google Ads can help you find more customers
+                        </div>
+                        <div class="views_hours">
+                            <h1>21k Views</h1>
+                            <h1>1 Hour Ago</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- the end -->
+                <!-- the end -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/topnavjs.js"></script>
+</body>
+
+</html>

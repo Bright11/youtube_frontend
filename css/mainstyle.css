@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --gray-color: #D6D1D1;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    margin-top: 80px;
+    gap: 50px;
+}
+
+/*  */
+.sidebarremove {
+    display: none;
+    max-width: 30px;
+}
+
+/*  */
+.left_sidebar {
+    flex: 2;
+    height: 100vh;
+    padding: 0px 10px;
+    max-width: fit-content;
+}
+
+.maincontent {
+    flex: 8;
+}
+
+.sidebarul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebarul>p {
+    align-items: flex-start;
+}
+
+.sidebarul>li {
+    padding: 10px;
+    width: 100%;
+}
+
+.sidebarul>li:hover {
+    background-color: var(--gray-color);
+}
+
+.sidebarul>li>a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+}
+
+
+/* main conten */
+
+.video__holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video__holder .myvideo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+}
+
+.video__name_logo {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+}
+
+.video__name_logo>img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.video__name_logo>h1 {
+    font-size: 18px;
+}
+
+.video__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.views_hours {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+.views_hours>h1 {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:720px) {
+    .sidebarul>li>a>p {
+        display: none;
+    }
+
+}

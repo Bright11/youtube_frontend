@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/0560d0caf7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/details.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="topnav">
+        <div class="top_right_bar" id="hidde_mobile">
+            <div class="top_bar_open_close">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="youtub__icon" onclick="hidesidbar()">
+                <i class="fab fa-youtube-square"></i>
+                <h1>YouTube</h1>
+            </div>
+
+        </div>
+        <ul class="ultop">
+
+            <div class="searchtop" id="searchtop">
+                <i class="fas fa-arrow-left closearrow" onclick="hide_forms_from()" id="closearrow"></i>
+                <form action="" class="topform topform_idden" id="topform">
+                    <input type="text" placeholder="Search" />
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+                <i class="fas fa-search searchhide" id="searchhide" onclick="hidesaerchbar()"></i>
+
+                <i class="fas fa-microphone mictopbar"></i>
+            </div>
+
+        </ul>
+        <div class="left_bar_logo" id="hidde_mobile">
+            <i class="fas fa-video-slash notify_video_icon"></i>
+
+            <i class="fas fa-bell"></i>
+        </div>
+    </nav>
+    <!-- the end of navbar -->
+
+    <div class="container">
+        <div class="left_sidebar">
+            <ul class="sidebarul">
+                <li class="active"><a href="index.html"><i class="fas fa-wallet"></i>
+                        <p class="sidebar__namep">Home</p>
+                    </a></li>
+                <li><a href=""><i class="fas fa-home-lg"></i>
+                        <p class="sidebar__namep">Short</p>
+                    </a></li>
+                <li><a href=""><i class="fas fa-play-circle"></i>
+                        <p class="sidebar__namep">Subscription</p>
+                    </a></li>
+                <li><a href=""><i class="fa-regular fa-eject"></i>
+                        <p class="sidebar__namep">Library</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>
+                        <p class="sidebar__namep">History</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-video"></i>
+                        <p class="sidebar__namep">Your videos</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>
+                        <p class="sidebar__namep">Watch Later</p>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="maincontent">
+            <div class="details_page">
+                <!-- main conetnt details page -->
+
+                <div class="details_main">
+                    <video controls
+                        src="./video/How To Integrate PayPal payments in Reactjs - Including Credit Card without Authentication.mp4"></video>
+                    <div class="detailspage_info">
+                        <p>Ukraine rejects Russian truce order as U.S. and Germany sends combat vehicles | Top News |
+                            WION</p>
+                        <div class="channel_name_details">
+                            <div class="channel_logo_details">
+                                <img src="/img/1667496355.jpg" alt="">
+                                <p class="channelp">Chika Channel <small>72.21M subscription</small></p>
+                            </div>
+                            <p class="subscribep"><a href="">Subscribe</a></p>
+                            <p><a href=""><i class="fas fa-thumbs-up"></i></a></p>
+                            <p><a href=""><i class="fas fa-thumbs-down"></i></a></p>
+                            <p><a href=""><i class="fas fa-share"></i>Share</a></p>
+                        </div>
+                        <p class="description">
+                            4K views 50 minutes ago #russiaukrainewar #vladimirputin #wion
+                            Ukrainian President Volodymyr Zelensky on Thursday dismissed the order on a ceasefire by
+                            Russian President Vladimir
+                            Putin calling it as 'hypocrisy'. Watch this video to know more
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment_and_logo">
+                            <img src="/img/1667496355.jpg" alt="">
+                            <input type="text" placeholder="Add Comment">
+                        </div>
+                        <div class="commented_users">
+                            <div class="usercomment">
+                                <img src="/img/1667496355.jpg" alt="">
+                                <p>4K views 50 minutes ago #russiaukrainewar #vladimirputin #wion
+                                    Ukrainian President Volodymyr Zelensky on Thursday dismissed the order on a
+                                    ceasefire by Russian President Vladimir
+                                    Putin calling it as 'hypocrisy'. Watch this video to know more</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the end -->
+                <!-- side right bar details page -->
+
+                <div class="details_right_bar">
+                    <div class="details_rightbar_items">
+                        <video controls
+                            src="./video/How To Integrate PayPal payments in Reactjs - Including Credit Card without Authentication.mp4"></video>
+                        <p>What impact will western deliveries of armored vehicles</p>
+                    </div>
+                </div>
+                <!-- the end -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/topnavjs.js"></script>
+</body>
+
+</html>
